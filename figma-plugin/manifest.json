@@ -1,0 +1,13 @@
+{
+  "name": "SVG-drop: сборщик иллюстраций",
+  "id": "svg-drop-composer",
+  "api": "1.0.0",
+  "main": "code.js",
+  "ui": "ui.html",
+  "editorType": ["figma"],
+  "documentAccess": "dynamic-page",
+  "networkAccess": {
+    "allowedDomains": ["https://fonts.googleapis.com", "https://fonts.gstatic.com"],
+    "reasoning": "Шрифты интерфейса плагина. Библиотека иллюстраций встроена в плагин и из сети не загружается."
+  }
+}
