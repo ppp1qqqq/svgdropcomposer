@@ -1,0 +1,7 @@
+{
+  "name": "Море",
+  "background": ["#D9EEF7", "#9CCFE6", "#3E8DB8"],
+  "objects": ["#FFE08A", "#FF8A65", "#FFD3C4"],
+  "ink": "#181817",
+  "paper": "#FFFFFF"
+}
