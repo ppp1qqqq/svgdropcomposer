@@ -1,0 +1,30 @@
+{
+  "name": "illustration-composer",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Конструктор векторных иллюстраций из библиотеки объектов: сборка по метафоре или списку, палитры с автоперекраской, экспорт в SVG",
+  "scripts": {
+    "library": "node scripts/build-library.mjs",
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "build:single": "tsc --noEmit && vite build --mode single",
+    "build:artifact": "npm run build:single && node scripts/make-artifact.mjs",
+    "build:figma": "tsc --noEmit && vite build --mode figma && node scripts/make-figma-plugin.mjs",
+    "preview": "vite preview",
+    "test": "node scripts/run-ts.mjs tests/run.ts"
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "2.6.2",
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
+    "@vitejs/plugin-react": "4.3.4",
+    "typescript": "5.6.3",
+    "vite": "5.4.11",
+    "vite-plugin-singlefile": "2.0.3"
+  }
+}
